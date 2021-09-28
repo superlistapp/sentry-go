@@ -32,7 +32,7 @@ process:
    - Be your own first reviewer. Make sure your code compiles and passes the
      existing tests.
 
-[new-issue]: https://github.com/getsentry/sentry-go/issues/new/choose
+[new-issue]: https://github.com/superlistapp/sentry-go/issues/new/choose
 [commit-guide]: https://develop.sentry.dev/code-review/#commit-guidelines
 [pr-guide]: https://develop.sentry.dev/code-review/#guidelines-for-submitters
 

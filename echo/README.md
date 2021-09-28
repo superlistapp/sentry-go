@@ -7,14 +7,14 @@
 
 # Official Sentry Echo Handler for Sentry-go SDK
 
-**Godoc:** https://godoc.org/github.com/getsentry/sentry-go/echo
+**Godoc:** https://godoc.org/github.com/superlistapp/sentry-go/echo
 
-**Example:** https://github.com/getsentry/sentry-go/tree/master/example/echo
+**Example:** https://github.com/superlistapp/sentry-go/tree/master/example/echo
 
 ## Installation
 
 ```sh
-go get github.com/getsentry/sentry-go/echo
+go get github.com/superlistapp/sentry-go/echo
 ```
 
 ```go
@@ -22,8 +22,8 @@ import (
     "fmt"
     "net/http"
 
-    "github.com/getsentry/sentry-go"
-    sentryecho "github.com/getsentry/sentry-go/echo"
+    "github.com/superlistapp/sentry-go"
+    sentryecho "github.com/superlistapp/sentry-go/echo"
     "github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 )
@@ -73,7 +73,7 @@ Timeout time.Duration
 
 ## Usage
 
-`sentryecho` attaches an instance of `*sentry.Hub` (https://godoc.org/github.com/getsentry/sentry-go#Hub) to the `echo.Context`, which makes it available throughout the rest of the request's lifetime.
+`sentryecho` attaches an instance of `*sentry.Hub` (https://godoc.org/github.com/superlistapp/sentry-go#Hub) to the `echo.Context`, which makes it available throughout the rest of the request's lifetime.
 You can access it by using the `sentryecho.GetHubFromContext()` method on the context itself in any of your proceeding middleware and routes.
 And it should be used instead of the global `sentry.CaptureMessage`, `sentry.CaptureException`, or any other calls, as it keeps the separation of data between the requests.
 

@@ -11,7 +11,7 @@ go get github.com/getsentry/raven-go
 sentry-go
 
 ```go
-go get github.com/getsentry/sentry-go@v0.0.1
+go get github.com/superlistapp/sentry-go@v0.0.1
 ```
 
 ## Configuration
@@ -31,7 +31,7 @@ sentry-go
 ```go
 import (
     "fmt"
-    "github.com/getsentry/sentry-go"
+    "github.com/superlistapp/sentry-go"
 )
 
 func main() {
@@ -86,7 +86,7 @@ import (
     "log"
 
     "github.com/certifi/gocertifi"
-    "github.com/getsentry/sentry-go"
+    "github.com/superlistapp/sentry-go"
 )
 
 sentryClientOptions := sentry.ClientOptions{

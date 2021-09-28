@@ -72,7 +72,7 @@ jobs:
       # the second is where sentry-go itself will be checked out.
       GOPATH: ${{ github.workspace }}/deps:${{ github.workspace }}/main
       GO111MODULE: "off"
-      WORKDIR: ${{ github.workspace }}/main/src/github.com/getsentry/sentry-go
+      WORKDIR: ${{ github.workspace }}/main/src/github.com/superlistapp/sentry-go
     defaults:
       run:
         working-directory: ${{ env.WORKDIR }}

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	sentrymartini "github.com/getsentry/sentry-go/martini"
+	sentrymartini "github.com/superlistapp/sentry-go/martini"
 
-	"github.com/getsentry/sentry-go"
+	"github.com/superlistapp/sentry-go"
 	"github.com/go-martini/martini"
 )
 

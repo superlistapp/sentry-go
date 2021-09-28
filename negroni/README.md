@@ -7,14 +7,14 @@
 
 # Official Sentry Negroni Handler for Sentry-go SDK
 
-**Godoc:** https://godoc.org/github.com/getsentry/sentry-go/negroni
+**Godoc:** https://godoc.org/github.com/superlistapp/sentry-go/negroni
 
-**Example:** https://github.com/getsentry/sentry-go/tree/master/example/negroni
+**Example:** https://github.com/superlistapp/sentry-go/tree/master/example/negroni
 
 ## Installation
 
 ```sh
-go get github.com/getsentry/sentry-go/negroni
+go get github.com/superlistapp/sentry-go/negroni
 ```
 
 ```go
@@ -22,8 +22,8 @@ import (
     "fmt"
     "net/http"
 
-    "github.com/getsentry/sentry-go"
-    sentrynegroni "github.com/getsentry/sentry-go/negroni"
+    "github.com/superlistapp/sentry-go"
+    sentrynegroni "github.com/superlistapp/sentry-go/negroni"
     "github.com/urfave/negroni"
 )
 
@@ -73,7 +73,7 @@ Timeout         time.Duration
 
 ## Usage
 
-`sentrynegroni` attaches an instance of `*sentry.Hub` (https://godoc.org/github.com/getsentry/sentry-go#Hub) to the request's context, which makes it available throughout the rest of the request's lifetime.
+`sentrynegroni` attaches an instance of `*sentry.Hub` (https://godoc.org/github.com/superlistapp/sentry-go#Hub) to the request's context, which makes it available throughout the rest of the request's lifetime.
 You can access it by using the `sentry.GetHubFromContext()` method on the request itself in any of your proceeding middleware and routes.
 And it should be used instead of the global `sentry.CaptureMessage`, `sentry.CaptureException`, or any other calls, as it keeps the separation of data between the requests.
 

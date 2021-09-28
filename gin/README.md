@@ -7,14 +7,14 @@
 
 # Official Sentry Gin Handler for Sentry-go SDK
 
-**Godoc:** https://godoc.org/github.com/getsentry/sentry-go/gin
+**Godoc:** https://godoc.org/github.com/superlistapp/sentry-go/gin
 
-**Example:** https://github.com/getsentry/sentry-go/tree/master/example/gin
+**Example:** https://github.com/superlistapp/sentry-go/tree/master/example/gin
 
 ## Installation
 
 ```sh
-go get github.com/getsentry/sentry-go/gin
+go get github.com/superlistapp/sentry-go/gin
 ```
 
 ```go
@@ -22,8 +22,8 @@ import (
     "fmt"
     "net/http"
 
-    "github.com/getsentry/sentry-go"
-    sentrygin "github.com/getsentry/sentry-go/gin"
+    "github.com/superlistapp/sentry-go"
+    sentrygin "github.com/superlistapp/sentry-go/gin"
     "github.com/gin-gonic/gin"
 )
 
@@ -69,7 +69,7 @@ Timeout         time.Duration
 
 ## Usage
 
-`sentrygin` attaches an instance of `*sentry.Hub` (https://godoc.org/github.com/getsentry/sentry-go#Hub) to the `*gin.Context`, which makes it available throughout the rest of the request's lifetime.
+`sentrygin` attaches an instance of `*sentry.Hub` (https://godoc.org/github.com/superlistapp/sentry-go#Hub) to the `*gin.Context`, which makes it available throughout the rest of the request's lifetime.
 You can access it by using the `sentrygin.GetHubFromContext()` method on the context itself in any of your proceeding middleware and routes.
 And it should be used instead of the global `sentry.CaptureMessage`, `sentry.CaptureException`, or any other calls, as it keeps the separation of data between the requests.
 

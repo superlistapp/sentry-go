@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/getsentry/sentry-go"
+	"github.com/superlistapp/sentry-go"
 	"github.com/gin-gonic/gin"
 )
 

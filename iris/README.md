@@ -7,22 +7,22 @@
 
 # Official Sentry [Iris](https://github.com/kataras/iris) Handler for Sentry-go SDK
 
-**Godoc:** https://godoc.org/github.com/getsentry/sentry-go/iris
+**Godoc:** https://godoc.org/github.com/superlistapp/sentry-go/iris
 
-**Example:** https://github.com/getsentry/sentry-go/tree/master/example/iris
+**Example:** https://github.com/superlistapp/sentry-go/tree/master/example/iris
 
 ## Installation
 
 ```sh
-go get github.com/getsentry/sentry-go/iris
+go get github.com/superlistapp/sentry-go/iris
 ```
 
 ```go
 import (
     "fmt"
 
-    "github.com/getsentry/sentry-go"
-    sentryiris "github.com/getsentry/sentry-go/iris"
+    "github.com/superlistapp/sentry-go"
+    sentryiris "github.com/superlistapp/sentry-go/iris"
     "github.com/kataras/iris/v12"
 )
 
@@ -68,7 +68,7 @@ Timeout         time.Duration
 
 ## Usage
 
-`sentryiris` attaches an instance of `*sentry.Hub` (https://godoc.org/github.com/getsentry/sentry-go#Hub) to the `iris.Context`, which makes it available throughout the rest of the request's lifetime.
+`sentryiris` attaches an instance of `*sentry.Hub` (https://godoc.org/github.com/superlistapp/sentry-go#Hub) to the `iris.Context`, which makes it available throughout the rest of the request's lifetime.
 You can access it by using the `sentryiris.GetHubFromContext()` method on the context itself in any of your proceeding middleware and routes.
 And it should be used instead of the global `sentry.CaptureMessage`, `sentry.CaptureException`, or any other calls, as it keeps the separation of data between the requests.
 

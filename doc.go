@@ -18,7 +18,7 @@ Sentry project. This step is accomplished through a call to sentry.Init.
 	}
 
 A more detailed yet simple example is available at
-https://github.com/getsentry/sentry-go/blob/master/example/basic/main.go.
+https://github.com/superlistapp/sentry-go/blob/master/example/basic/main.go.
 
 Error Reporting
 
@@ -55,7 +55,7 @@ For all users, support channels include:
 	Discord: https://discord.gg/Ww9hbqr (#go channel)
 
 If you found an issue with the SDK, please report through
-https://github.com/getsentry/sentry-go/issues/new/choose.
+https://github.com/superlistapp/sentry-go/issues/new/choose.
 
 For responsibly disclosing a security issue, please follow the steps in
 https://sentry.io/security/#vulnerability-disclosure.

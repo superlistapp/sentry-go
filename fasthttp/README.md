@@ -7,14 +7,14 @@
 
 # Official Sentry fasthttp Handler for Sentry-go SDK
 
-**Godoc:** https://godoc.org/github.com/getsentry/sentry-go/fasthttp
+**Godoc:** https://godoc.org/github.com/superlistapp/sentry-go/fasthttp
 
-**Example:** https://github.com/getsentry/sentry-go/tree/master/example/fasthttp
+**Example:** https://github.com/superlistapp/sentry-go/tree/master/example/fasthttp
 
 ## Installation
 
 ```sh
-go get github.com/getsentry/sentry-go/fasthttp
+go get github.com/superlistapp/sentry-go/fasthttp
 ```
 
 ```go
@@ -22,8 +22,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/getsentry/sentry-go"
-	sentryfasthttp "github.com/getsentry/sentry-go/fasthttp"
+	"github.com/superlistapp/sentry-go"
+	sentryfasthttp "github.com/superlistapp/sentry-go/fasthttp"
 )
 
 // To initialize Sentry's handler, you need to initialize Sentry itself beforehand
@@ -69,7 +69,7 @@ Timeout time.Duration
 
 ## Usage
 
-`sentryfasthttp` attaches an instance of `*sentry.Hub` (https://godoc.org/github.com/getsentry/sentry-go#Hub) to the request's context, which makes it available throughout the rest of the request's lifetime.
+`sentryfasthttp` attaches an instance of `*sentry.Hub` (https://godoc.org/github.com/superlistapp/sentry-go#Hub) to the request's context, which makes it available throughout the rest of the request's lifetime.
 You can access it by using the `sentryfasthttp.GetHubFromContext()` method on the context itself in any of your proceeding middleware and routes.
 And it should be used instead of the global `sentry.CaptureMessage`, `sentry.CaptureException`, or any other calls, as it keeps the separation of data between the requests.
 
